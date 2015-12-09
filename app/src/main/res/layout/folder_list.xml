@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/folder_list_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="@dimen/abc_text_size_display_1_material"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="48dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="false"
+        android:layout_below="@id/title"/>
+</RelativeLayout>
